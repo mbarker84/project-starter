@@ -1,1 +1,6 @@
 node_modules
+dist
+.*
+!/.gitignore
+!/.babelrc
+package-lock.json
