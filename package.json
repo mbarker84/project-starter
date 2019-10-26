@@ -2,13 +2,11 @@
 	"name": "project-starter",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "src/index.html",
 	"scripts": {
 		"serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
 		"scss": "node-sass --output-style compressed -o dist/css src/scss",
-		"test": "echo 'test'",
-		"build:css": "npm run scss",
-		"watch:css": "onchange 'src/scss' -- npm run build:css",
+		"watch:css": "onchange 'src/scss' -- npm run scss",
 		"start": "run-p serve watch:css"
 	},
 	"author": "Michelle Barker",
@@ -17,7 +15,7 @@
 	"devDependencies": {
 		"browser-sync": "^2.26.7",
 		"node-sass": "^4.12.0",
-		"onchange": "^6.1.0",
-		"npm-run-all": "^4.1.5"
+		"npm-run-all": "^4.1.5",
+		"onchange": "^6.1.0"
 	}
 }
