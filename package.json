@@ -2,7 +2,7 @@
 	"name": "project-starter",
 	"version": "1.0.0",
 	"description": "",
-	"main": "src/index.html",
+	"main": "index.html",
 	"scripts": {
 		"serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
 		"scss": "node-sass --output-style compressed -o dist/css src/scss",
